@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Historic Overtown Project</title>
+      <!-- Custom styles for this template -->
+      <!--  <link href="cover - Copy.css" rel="stylesheet"> -->
+      <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+      <link rel="stylesheet" media="(min-width: 640px)" href="css/stylesheet.css" type="text/css" />
+      <link rel="stylesheet" media="(max-width: 640px)" href="css/stylesheet-mobile.css" type="text/css" />
+      <link rel="stylesheet" media="(max-width: 640px)" href="font-awesome-4.3.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+      <link rel="stylesheet" type="text/css" href="css/custom2.css" />
+	  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+   </head>
+   <body >
+      <div class="se-pre-con"></div>
+      <div >
+         <ul class = "nav">
+            <li class="center">
+               <a href="index.html">
+                  Home
+                  <div class="center"></div>
+               </a>
+            </li>
+            <li >
+               <a href="take-a-tour.html">
+                  Take a Tour
+                  <div class="center"></div>
+               </a>
+            </li>
+            <li >
+               <a href="about-us.html">
+                  About Us
+                  <div class="center"></div>
+               </a>
+            </li>
+            <li>
+               <a href="contact-us.html">
+                  Contact Us
+                  <div class="center"></div>
+               </a>
+            </li>
+         </ul>
+         <div class="icon-menu">
+            <div id="menu">
+               <i class="fa fa-bars"></i>
+               <h2>Overtown Project</h2>
+           
+			<!--	<div class="uc-container" style="float:right;">
+						<div class="uc-initial-content" >
+						<h2 style="margin-top:-55px">i</h2>
+							<span class="icon-eye"></span>
+						</div>
+						<div class="uc-final-content">
+				
+							<div class="title"><h4>The Professor</h4> by Dan Matutina <a href="http://drbl.in/dMLS" class="icon-link"></a></div>
+							<span class="icon-cancel"></span>
+						</div>
+					</div><!-- / uc-container -->
+					 </div>
+         </div>
+         <div id="encap">
+            <div id="map-canvas" ></div>
+            <div id="directionsPanel">
+               <h2>Your route!</h2>
+               <!--<p>Drag the pins in the order that you would like to visit them, and we'll draft up the directions.</p>-->
+               <p>Total Distance: <span id="total"></span></p>
+            </div>
+         </div>
+         <script src="js/jquery-1.9.1.min.js"></script>
+         <script src="js/hidePreloader.js"></script>
+         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+         <script type="text/javascript" src="js/initializeMap.js"></script>
+         <script src="js/menu.js"></script>
+		 <script type="text/javascript" src="js/jquery.pfold.js"></script>
+		 <script type="text/javascript">
+			$(function() {
+
+				// say we want to have only one item opened at one moment
+				var opened = false;
+
+				$( 'div.icon-menu > div#menu > div.uc-container' ).each( function( i ) {
+
+					var $item = $( this ), direction;
+
+					switch( i ) {
+						case 0 : direction = ['left','bottom']; break;
+						case 1 : direction = ['left','bottom']; break;
+						case 2 : direction = ['left','top']; break;
+						case 3 : direction = ['left','top']; break;
+					}
+					
+					var pfold = $item.pfold( {
+						folddirection : ['left','bottom'],
+						speed : 300,
+						onEndFolding : function() { opened = false; },
+					} );
+
+					$item.find( 'div.uc-initial-content' ).on( 'click', function() {
+console.log("ACHIEVED");
+						if( !opened ) {
+							opened = true;
+							pfold.unfold();
+						}
+
+
+					} ).end().find( 'span.icon-cancel' ).on( 'click', function() {
+
+						pfold.fold();
+
+					} );
+
+				} );
+				
+			});
+		</script>
+   </body>
+   </div>
+</html>

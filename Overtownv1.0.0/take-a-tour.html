@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+    
+<meta charset="utf-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Historic Overtown Project</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  <!--  <link href="cover - Copy.css" rel="stylesheet"> -->
+	
+	
+	<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+	<style>
+	
+	
+html{
+	  font-family: "Lato";
+
+}
+		body {
+height:100vh;
+width:100vw;
+
+  
+}
+
+.center{
+	text-align:center;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.grad {
+  background: -webkit-linear-gradient(top, #77ff2d , #46f2df); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #77ff2d , #46f2df); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #77ff2d , #46f2df); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, #77ff2d , #46f2df); /* Standard syntax */
+}
+
+.T{
+  font-size: 0.417in;
+  font-family: "Lato";
+  color: #814c0e;
+  text-align: center;
+  padding-top:100px;
+  z-index: 24;
+}
+
+.leftHead{
+  font-size: 0.417in;
+  font-family: "Lato";
+  color: #814c0e;
+  padding-top:80px;
+  z-index: 24;
+  padding-left:100px;
+}
+.text{
+  font-size: 0.25in;
+  font-family: "Lato";
+  color: #814c0e;
+  text-align: center;
+  padding-top:100px;
+  z-index: 24;
+}
+#box{
+	width:280px;
+	height:80px;
+	border-left:2px solid;
+	border-top:1px solid;
+	border-right:1px solid;
+	border-bottom:1px solid;
+	margin-right:auto;
+	margin-left:auto;
+	
+	text-align:center;
+	
+
+}
+
+#box h3{
+	color:white;
+
+}
+
+@keyframes stretch {
+    from {}
+    to {width:70px;}
+}
+
+.nav{
+padding-top:20px;
+
+}
+.nav li{
+ display:inline-block;
+  font-size: 20px;
+  font-family: "Lato";
+ padding-left:50px;
+ -webkit-animation-name: deSpace; /* Chrome, Safari, Opera */
+ -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+}
+
+.nav li:hover{
+    -webkit-animation-name: space; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+	padding-left:65px;
+	padding-right:15px;
+
+}
+
+.nav li div{
+ display:block;
+ width:50px;
+ height:5px;
+ background-color:#77fe3f;
+}
+
+.nav li:hover div{
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-name: lightGreen;
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+	width:60px;
+	background-color:white;
+}
+
+
+#test {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {width:50px;}
+    to {width:60px;}
+}
+
+@-webkit-keyframes space {
+    from {padding-left:50px;padding-right:0px;}
+    to {padding-left:65px;padding-right:15px;}
+	
+}
+
+@-webkit-keyframes deSpace {
+	from {}
+    to {padding-left:50px;padding-right:0px;}
+    
+}
+
+@-webkit-keyframes lightGreen {
+	from {background-color:#77fe3f}
+    to {background-color:#ffffff}
+    
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes lSwipe {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+#hidden{
+
+display:none;
+}
+
+h1:hover hidden{
+
+display:block;
+}
+
+
+
+	</style>
+  <script>
+  function a()
+  {
+  console.log("FF");
+	  var a = document.getElementById("hidden");
+	  a.style.display = "block";
+	  console.log("hey");
+  }
+    function b()
+  {
+  console.log("DONE");
+	  var a = document.getElementById("hidden");
+	  a.style.display = "none";
+	  console.log("hey");
+  }
+  </script>
+  
+  </head>
+  
+<body class="grad">
+<h1  class = "hidden"onmouseover="a()" onmouseout="b()">HERE</h1>
+
+<div >
+<ul class = "nav">
+<li class="center">Home <div class="center"></div></li>
+<li>Take a Tour<div class="center"></div></li>
+<li>About Us<div class="center"></div></li>
+<li>Contact Us<div class="center"></div></li>
+</ul>
+<p class="leftHead" style="padding-bottom:10px;border-bottom:1px dashed;border-bottom-color:white;">Directions</p>
+<div class="leftSwipe"style="margin-left:100px;margin-top:50px;width:580px;height:60px;background-color:rgba(0,0,0,0.5);"><p class="text" style="color:white;padding-top:10px;font-size:15px;"> The Historic Overtown project is a walking tour service brought to you </p></div>
+<div style="margin-left:100px;margin-top:50px;width:580px;height:60px;background-color:rgba(0,0,0,0.5);font-size:15px;"></div>
+<div style="margin-left:100px;margin-top:50px;width:580px;height:60px;background-color:rgba(0,0,0,0.5);font-size:15px;"></div>
+
+</body>
+</div>
+
+</html>    
+

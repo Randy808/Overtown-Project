@@ -1,0 +1,188 @@
+	html {
+	    font-family: "Lato";
+	    background: -webkit-linear-gradient(bottom, #77ff2d, #46f2df) fixed;
+	    /* For Safari 5.1 to 6.0 */
+	    
+	    background: -o-linear-gradient(top, #77ff2d, #46f2df) fixed;
+	    /* For Opera 11.1 to 12.0 */
+	    
+	    background: -moz-linear-gradient(top, #77ff2d, #46f2df) fixed;
+	    /* For Firefox 3.6 to 15 */
+	    
+	    background: linear-gradient(to top, #77ff2d, #46f2df) fixed;
+	    /* Standard syntax */
+		 min-height: 100%;
+		 min-width:100%;
+    background-size: 100%;
+
+
+	}
+	body {
+	      left: 0;
+	  margin: 0;
+	 height:100vh;
+	 width:100vw;
+	 position:fixed;
+	 overflow-x:visible;
+	 overflow-y:scroll;
+
+
+	}
+	.center {
+
+	}
+	.T {
+	    font-size: 38px;
+	    font-family: "Lato";
+	    color: #814c0e;
+	    text-align: center;
+	    padding-top: 70px;
+	    z-index: 24;
+	}
+	.text {
+	    font-size: 23px;
+		line-height: 1.42857143;
+	    font-family: "Lato";
+	    color: #814c0e;
+	    text-align: center;
+	    padding-top: 80px;
+	    z-index: 24;
+	}
+	
+	
+	.nav {
+		background-color:#25FCA0;
+		margin-left:-240px;
+		margin-top:0px;
+		position:absolute;
+		width:200px;
+		height:100vh;
+		
+		/*box-shadow:5px 5px 5px gray;*/
+		
+	}
+	.nav li {
+	    display: inline-block;
+	    font-size: 20px;
+	    font-family: "Lato";
+	    padding-left: 0px;
+		
+	}
+	.nav li a {
+	    display: inline-block;
+	    font-size: 20px;
+	    font-family: "Lato";
+	    padding-left: 10px;
+		padding-top:10px;
+		padding-bottom:10px;
+		text-align:center;
+		width:190px;
+		border-bottom:1px solid white;
+		 text-decoration: none !important;
+	  
+	}
+	
+	.nav li a:visited {
+	    color:white;
+	    text-decoration: none !important;
+		}
+	.nav li div {
+	    display: none;
+	}
+	#map-canvas {
+		width:100%;
+		height:50vh;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+
+	
+
+	
+	
+	
+	/*a:-webkit-any-link {
+	    color: -webkit-link;
+	    text-decoration: none;
+	    cursor: auto;
+	}*/
+	.leftHead{
+  font-size: 0.417in;
+  font-family: "Lato";
+  color: #814c0e;
+  padding-top:40px;
+  z-index: 24;
+  padding-left:100px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader-64x/Preloader_8.gif) center no-repeat ;
+}
+#directions{
+
+	display:none;
+
+}
+
+/* Handle */
+#directionsPanel {
+	height:50vh;
+	overflow:hidden; 
+	overflow-y:scroll;
+	margin-right:60px;
+	width:100%;
+}
+.adp-directions {
+
+	background-color:white;
+
+}
+
+.adp-summary {
+
+	background-color:#FFAAAA;
+	border:1px #D46A6A solid;
+	margin-bottom:10px;
+
+}
+
+
+#menu{
+
+	padding-left:20px;
+	padding-top:10px;
+	
+	
+
+}
+
+#menu h2{
+font-size:.33in;
+margin-top:-30px;
+text-align:center;
+font-family:"LatoThin";
+
+}
+.icon-menu {
+
+width:100vw;
+height:50px;
+/*background-color:rgba(245,245,245,.9);*/
+/*for dark nav bar:*/
+background-color:rgba(255,255,255,.25);
+font-size:25px;
+color:white;
+
+}
+i {
+	cursor: pointer;
+}
